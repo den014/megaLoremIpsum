@@ -1,0 +1,63 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: $radius;
+
+    &-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-shrink: 0;
+        background: $color-brand-light;
+        border-radius: $radius $radius 0 0;
+        border: solid 1px rgba(0, 0, 0, 0);
+
+        > .field {
+            color: $color-white;
+            font-weight: 600;
+        }
+    }
+
+    &-container {
+        height: 0;
+        border: solid 1px rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        > .item {
+            display: flex;
+            flex-direction: row;
+            flex-shrink: 0;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            transition: background .1s;
+
+            &:nth-of-type(2n + 1) {
+                background: rgba(0, 0, 0, .05);
+            }
+
+            &:hover {
+                background: $color-brand-light;
+
+                > .field {
+                    color: $color-white;
+                }
+            }
+
+            &.active {
+                background: $color-brand;
+
+                > .field {
+                    color: $color-white;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
