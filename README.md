@@ -1,6 +1,7 @@
 # Запуск:
 - yarn<br>
-- yarn dev<br><br>
+- yarn dev<br>
+- localhost:3000<br><br>
 
 # Задача:<br>
 - Создать REST API сервер;<br>
