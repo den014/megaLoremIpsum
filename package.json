@@ -21,7 +21,7 @@
     "autoprefixer": "^9.7.4",
     "babel-core": "^6.25.0",
     "css-loader": "^3.4.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.12.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.3.1",
